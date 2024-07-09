@@ -1,0 +1,23 @@
+ Logger written on 2024-07-02T03:56:31.655Z Level:[undefined] Message: Error Occurred: ENOENT: no such file or directory, open './data/json' 
+  Logger written on 2024-07-02T03:57:37.191Z Level:[undefined] Message: Error Occurred: ENOENT: no such file or directory, open './data/json' 
+  Logger written on 2024-07-02T03:57:37.194Z Level:[undefined] Message: Error Occurred: ENOENT: no such file or directory, open './data/json' 
+  Logger written on 2024-07-02T04:00:29.875Z Level:[undefined] Message: Error Occurred: ENOENT: no such file or directory, open './data/json' 
+  Logger written on 2024-07-02T04:00:29.878Z Level:[undefined] Message: Error Occurred: ENOENT: no such file or directory, open './data/json' 
+  Logger written on 2024-07-02T04:01:12.251Z Level:[undefined] Message: Error Occurred: ENOENT: no such file or directory, open './data' 
+  Logger written on 2024-07-02T04:01:12.253Z Level:[Info] Message: File Written Successfully 
+  Logger written on 2024-07-02T04:02:01.219Z Level:[Info] Message: File Written Successfully 
+  Logger written on 2024-07-02T04:02:17.333Z Level:[Info] Message: File Read Successfully 
+  Logger written on 2024-07-02T04:02:17.336Z Level:[Info] Message: File Written Successfully 
+  Logger written on 2024-07-02T04:02:36.423Z Level:[Info] Message: File Read Successfully 
+  Logger written on 2024-07-02T04:02:36.425Z Level:[Info] Message: File Written Successfully 
+  Logger written on 2024-07-02T04:02:52.355Z Level:[Info] Message: File Read Successfully 
+  Logger written on 2024-07-02T04:02:52.357Z Level:[Info] Message: File Written Successfully 
+  Logger written on 2024-07-02T04:03:09.037Z Level:[Info] Message: File Read Successfully 
+  Logger written on 2024-07-02T04:03:41.334Z Level:[Info] Message: File Read Successfully 
+  Logger written on 2024-07-03T02:27:35.561Z Level:[Info] Message: File Read Successfully 
+  Logger written on 2024-07-03T02:27:35.564Z Level:[Info] Message: File Written Successfully 
+  Logger written on 2024-07-03T02:28:21.408Z Level:[Info] Message: File Read Successfully 
+  Logger written on 2024-07-03T04:03:21.915Z Level:[Info] Message: File Read Successfully 
+  Logger written on 2024-07-03T04:03:21.917Z Level:[Warning] Message: $(data) is  mandatory 
+  Logger written on 2024-07-03T04:03:21.917Z Level:[Info] Message: File Read Successfully 
+ 
