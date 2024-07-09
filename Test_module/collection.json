@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Anshu",
+    "email": "anshu@gmail.com",
+    "password": "123"
+  },
+  {
+    "id": 2,
+    "name": "Aman",
+    "email": "aman@ok.com",
+    "password": "123"
+  },
+  {
+    "id": 3,
+    "name": "Lorem",
+    "email": "lorem@lorem.com",
+    "password": "lorem@123"
+  },
+  {
+    "id": 4,
+    "name": "Rohit",
+    "email": "rohit@ok.com",
+    "password": "AAaa@123"
+  },
+  {
+    "id": 5,
+    "name": "User1",
+    "email": "user@ok.com",
+    "password": "user@123"
+  },
+  {
+    "id": 6,
+    "name": "Awanish",
+    "email": "av@ok.com",
+    "password": "av@123"
+  },
+  {
+    "id": 7,
+    "name": "qwed",
+    "email": "qwd@sd.wd",
+    "password": "wef"
+  },
+  {
+    "id": 8,
+    "name": "denom",
+    "email": "dev@ok.com",
+    "password": "123erfgv"
+  }
+]

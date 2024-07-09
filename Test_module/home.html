@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('/users')
+                .then(response => response.json())
+                .then(users => {
+                    const userList = document.getElementById('userList');
+                    users.forEach(user => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = `id: ${user.id},     Name: ${user.name},      Email: ${user.email},        Password: ${user.password}`;
+                        userList.appendChild(listItem);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching users:', error);
+                });
+        });
+    </script>
+</head>
+<body>
+    <h1>All Users </h1>
+    <ul id="userList"></ul>
+    <a href="/login">Logout</a>
+</body>
+</html>

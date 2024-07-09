@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('loginForm').addEventListener('submit', handleLogin);
+        });
+
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent form from submitting the default way
+
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = {
+                email: formData.get('email'),
+                password: formData.get('pass')
+            };
+
+            fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(result => {
+                if (result.message === 'Login successful') {
+                    window.location.href = '/home'; // Redirect to home.html
+                } else {
+                    document.getElementById('demo').innerText = result.message;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            function handleNavigation(event) {
+                event.preventDefault();
+                const path = event.target.getAttribute('href');
+                if (path) {
+                    history.pushState({}, '', path);
+                    loadContent(path);
+                }
+            }
+
+            function loadContent(path) {
+                fetch(path)
+                    .then(response => response.text())
+                    .then(html => {
+                        document.body.innerHTML = html;
+                        document.querySelectorAll('a').forEach(link => {
+                            link.addEventListener('click', handleNavigation);
+                        });
+                    })
+                    .catch(err => console.warn('Something went wrong.', err));
+            }
+
+            window.onpopstate = function(event) {
+                loadContent(location.pathname);
+            };
+
+            document.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', handleNavigation);
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <h1>Login : </h1>
+    <form id="loginForm" action="/login" method="POST">
+        Email : <input type="email" id="email" name="email" required />
+        <br>
+        Password : <input type="password" id="pass" name="pass" required />
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <p id="demo"></p>
+    <a href="/register">Register</a>
+    <a href="/home">Home</a>
+</body>
+</html>
