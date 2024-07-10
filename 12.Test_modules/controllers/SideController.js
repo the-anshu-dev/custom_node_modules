@@ -1,33 +1,13 @@
-const View = require('../utility')
-
-const SideController = {
+const View = require('../utility');
+const SiteController = {
     IndexPage : function(req,resp){
-        const content = View.render('pages/index.html');
-        resp.writeHead(200,{'content-type':'text/html'})
-
-        resp.write(content)
-        resp.end()
+        return View.renderHTML(resp,"pages/index.html");
     },
-
-    SignUpPage : function(req,resp){
-        const content = View.render('pages/register.html');
-        resp.writeHead(200,{'content-type':'text/html'})
-
-        resp.write(content)
-        resp.end()
-    },
-
-    loginPage : function(req,resp){
-        const content = View.render('pages/login.html');
-        resp.writeHead(200,{'content-type':'text/html'})
-
-        resp.write(content)
-        resp.end()
-    },
-
-
-
+    SignUpPage:function(req,resp){
+        return View.renderHTML(resp,"pages/register.html");
+       },
+       loginPage : function(req,resp){
+        return  View.renderHTML(resp,"pages/login.html");
+    }
 }
-
-
-module.exports = SideController
+module.exports = SiteController;
