@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F0F0F0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #28A745;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="nav-links">
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+</header>
+<div class="container">
+    <div class="content">
+        <h1>Welcome to the Home Page</h1>
+        <p>This is a simple home page using the same theme as the login and register pages.</p>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+</body>
+</html>
